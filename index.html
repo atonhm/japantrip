@@ -283,9 +283,9 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
   <div class="nav-tabs">
     <button class="tab-btn active" onclick="switchTab('flight',this)">✈️ 항공편</button>
     <button class="tab-btn" onclick="switchTab('timeline',this)">🗓 일정</button>
-    <button class="tab-btn" onclick="switchTab('map',this)">🗺 지도</button>
-    <button class="tab-btn" onclick="switchTab('hotel',this)">🏯 숙소</button>
     <button class="tab-btn" onclick="switchTab('transport',this)">🚐 이동</button>
+    <button class="tab-btn" onclick="switchTab('hotel',this)">🏯 숙소</button>
+    <button class="tab-btn" onclick="switchTab('map',this)">🗺 지도</button>
     <button class="tab-btn" onclick="switchTab('vjw',this)">📱 입국QR</button>
   </div>
 </div>
@@ -366,7 +366,7 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
     <div class="flight-divider"></div>
     <div class="notice" style="margin-top:8px;">
       <span class="notice-icon">📋</span>
-      <span>예약번호 <strong>FB5MNR</strong> · KE714 · 구매 완료 · 좌석 <strong>37A</strong> (비상구)</span>
+      <span>예약번호 <strong>FB5MNR</strong> · KE714 · 구매 완료 · 좌석 <strong>14E</strong></span>
     </div>
   </div>
 
@@ -420,7 +420,7 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
   <div class="card">
     <div class="card-header">
       <div class="card-title">🛬 여정 2 · 나리타 → 인천</div>
-      <span class="badge badge-bonus">06.13 (토) 구매완료</span>
+<span class="badge badge-bonus">🎫 마일리지 발권</span>
     </div>
     <div class="flight-row">
       <div class="flight-left">
@@ -444,7 +444,7 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
     <div class="flight-divider"></div>
     <div class="notice" style="margin-top:8px;">
       <span class="notice-icon">📋</span>
-      <span>예약번호 <strong>FAMB4F</strong> · KE714 · 구매 완료 · 이성미 <strong>37C</strong> · 김현수 <strong>37B</strong> (비상구)</span>
+      <span>예약번호 <strong>FAMB4F</strong> · KE714 · 🎫 마일리지 발권 · 이성미 <strong>14F</strong> · 김현수 <strong>14H</strong></span>
     </div>
   </div>
 </div>
@@ -671,33 +671,32 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
     </div>
     <div class="tl-item">
       <div class="tl-dot"></div>
-      <div class="tl-time">12:00</div>
-      <div class="tl-title">🚄 신칸센 탑승 · 도쿄 방면 출발</div>
+      <div class="tl-time">12:15</div>
+      <div class="tl-title">🚄 노조미 신칸센 탑승 · 도쿄역 향발</div>
       <div class="tl-desc" style="background:var(--gold-light,#fff9ec);border-radius:8px;padding:8px 10px;border-left:3px solid var(--gold);">
-        <span style="font-weight:600;color:var(--gold);">🚄 신오사카 → 도쿄역</span><br>
-        노조미 이용 시 약 2시간 15분 소요<br>
-        <span style="color:var(--stone);font-size:11px;">⚠️ 승차권 상세 업데이트 예정</span>
+        <span style="font-weight:600;color:var(--gold);">🚄 노조미 · 신오사카 12:15 → 도쿄역 14:45</span><br>
+        소요 약 2시간 30분 · 도쿄역에서 아사마 신칸센 환승 (신칸센 게이트 내, 출구 불필요)
       </div>
     </div>
     <div class="tl-item">
       <div class="tl-dot"></div>
-      <div class="tl-time">14:20</div>
-      <div class="tl-title">🚉 도쿄역 도착 · 카루이자와행 환승</div>
-      <div class="tl-desc">신칸센 아사마 환승 · 도쿄역 → 카루이자와역 약 1시간 10분</div>
+      <div class="tl-time">14:45</div>
+      <div class="tl-title">🚉 도쿄역 도착 · 아사마 신칸센 환승</div>
+      <div class="tl-desc">아사마 신칸센 환승 · 도쿄역 15:00 → 카루이자와역 약 1시간 10분 소요<br><span style="color:var(--stone);font-size:11px;">※ 신칸센 게이트 안에서 환승 — 출구 불필요</span></div>
       <a class="map-btn" href="https://maps.google.com/?q=東京駅" target="_blank">🗺️ 도쿄역</a>
     </div>
     <div class="tl-item">
       <div class="tl-dot"></div>
-      <div class="tl-time">15:30</div>
+      <div class="tl-time">16:10</div>
       <div class="tl-title">🚉 카루이자와역 도착 · 택시 탑승</div>
-      <div class="tl-desc">카루이자와역 → 호시노야 가루이자와 택시 · 약 15분<br>
+      <div class="tl-desc">카루이자와역 → 호시노야 가루이자와 택시 · 약 15분
         <span style="color:var(--stone);font-size:11px;">⚠️ 신칸센 스케줄 확정 후 시간 업데이트 예정</span>
       </div>
       <a class="map-btn" href="https://maps.google.com/?q=軽井沢駅" target="_blank">🗺️ 카루이자와역</a>
     </div>
     <div class="tl-item">
       <div class="tl-dot"></div>
-      <div class="tl-time">16:00</div>
+      <div class="tl-time">16:30</div>
       <div class="tl-title">🏯 호시노야 가루이자와 체크인</div>
       <div class="tl-desc">호시노야 가루이자와 체크인 (최소 15시 이후)<br>
         자연 속 빌리지 스타일 리조트 · 개인 온천 시설 이용
@@ -757,7 +756,7 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
 
   <div id="day5" class="day-panel">
   <!-- DAY 5 -->
-  <div class="tl-day">Day 5 · 06월 13일 (토) — 호시노야 체크아웃 · 나리타 · 귀국</div>
+  <div class="tl-day">Day 5 · 06월 13일 (토) — 호시노야 체크아웃 · 귀국</div>
   <div class="timeline">
     <div class="tl-item">
       <div class="tl-dot"></div>
@@ -768,33 +767,63 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
     <div class="tl-item">
       <div class="tl-dot"></div>
       <div class="tl-time">11:00</div>
-      <div class="tl-title">🏨 체크아웃</div>
-      <div class="tl-desc">호시노야 가루이자와 체크아웃 · 캐리어 정리</div>
+      <div class="tl-title">🏨 체크아웃 · 짐 프런트 맡기기</div>
+      <div class="tl-desc">호시노야 체크아웃 후 캐리어 프런트 보관 · 자유 시간</div>
     </div>
     <div class="tl-item">
       <div class="tl-dot"></div>
       <div class="tl-time">11:30</div>
-      <div class="tl-title">🚕 택시 → 카루이자와역</div>
-      <div class="tl-desc">호시노야 가루이자와 → 카루이자와역 · 약 15분</div>
-      <a class="map-btn" href="https://maps.google.com/?q=軽井沢駅" target="_blank">🗺️ 카루이자와역</a>
+      <div class="tl-title">🚕 택시 → 구 카루이자와 긴자 (약 10분)</div>
+      <div class="tl-desc">호시노야 → 구 카루이자와 긴자 거리</div>
+      <a class="map-btn" href="https://maps.google.com/?q=旧軽井沢銀座通り+長野県北佐久郡" target="_blank">🗺️ 구 카루이자와 긴자</a>
     </div>
     <div class="tl-item">
       <div class="tl-dot"></div>
       <div class="tl-time">12:00</div>
-      <div class="tl-title">🚄 신칸센 · 도쿄역 경유 나리타 이동</div>
+      <div class="tl-title">🍽️ 구 카루이자와 긴자 점심</div>
+      <div class="tl-desc">카루이자와 현지 레스토랑 점심 식사</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot empty"></div>
+      <div class="tl-time">13:00</div>
+      <div class="tl-title">🛍️ 쇼핑 · 산책</div>
+      <div class="tl-desc">구 카루이자와 긴자 거리 쇼핑 · 카루이자와 기념품</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-time">14:30</div>
+      <div class="tl-title">🚕 택시 → 호시노야 짐 수령</div>
+      <div class="tl-desc">프런트에 맡긴 캐리어 수령</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-time">15:00</div>
+      <div class="tl-title">🚕 택시 → 카루이자와역</div>
+      <div class="tl-desc">호시노야 → 카루이자와역 약 15분</div>
+      <a class="map-btn" href="https://maps.google.com/?q=軽井沢駅" target="_blank">🗺️ 카루이자와역</a>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-time">15:20</div>
+      <div class="tl-title">🚄 아사마 신칸센 탑승 · 도쿄역 향발</div>
       <div class="tl-desc" style="background:var(--gold-light,#fff9ec);border-radius:8px;padding:8px 10px;border-left:3px solid var(--gold);">
-        <span style="font-weight:600;color:var(--gold);">카루이자와역 → 도쿄역 → 나리타공항 (NEX)</span><br>
-        카루이자와→도쿄 약 1시간 10분 · 도쿄→나리타 약 1시간<br>
-        <span style="color:var(--stone);font-size:11px;">⚠️ 승차권 상세 업데이트 예정</span>
+        <span style="font-weight:600;color:var(--gold);">🚄 아사마 · 카루이자와 15:20 → 도쿄역 약 16:30</span><br>
+        소요 약 1시간 10분
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-time">16:30</div>
+      <div class="tl-title">🚉 도쿄역 도착 · NEX 탑승</div>
+      <div class="tl-desc" style="background:var(--gold-light,#fff9ec);border-radius:8px;padding:8px 10px;border-left:3px solid var(--gold);">
+        <span style="font-weight:600;color:var(--gold);">나리타 익스프레스 (NEX) · 17:00~17:30 출발 → 나리타공항 약 1시간</span>
       </div>
     </div>
     <div class="tl-item">
       <div class="tl-dot empty"></div>
-      <div class="tl-time">15:00</div>
+      <div class="tl-time">18:00~18:30</div>
       <div class="tl-title">🛫 나리타공항 도착 · 탑승 수속</div>
-      <div class="tl-desc">나리타공항 도착 · 탑승 수속 · 면세점 쇼핑<br>
-        출국 심사 완료 후 탑승구 대기
-      </div>
+      <div class="tl-desc">탑승 수속 · 출국 심사 · 면세점 쇼핑<br>출발 약 2시간 30분 여유</div>
       <a class="map-btn" href="https://maps.google.com/?q=成田国際空港+千葉県成田市" target="_blank">🗺️ 나리타공항</a>
     </div>
     <div class="tl-item">
@@ -802,17 +831,16 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
       <div class="tl-time">20:55</div>
       <div class="tl-title">✈️ 나리타(NRT) 출발 · 귀국</div>
       <div class="tl-desc" style="background:var(--gold-light,#fff9ec);border-radius:8px;padding:8px 10px;border-left:3px solid var(--gold);">
-        <span style="font-weight:600;color:var(--gold);">도쿄/나리타 NRT → 서울/인천 ICN</span><br>
-        23:25 인천 도착 예정<br>
-        <span style="font-weight:600;color:var(--gold);">KE714 · 도쿄/나리타 NRT → 서울/인천 ICN</span><br>
-        23:25 인천 도착 예정<br>
-        <span style="color:var(--stone);font-size:11px;">의장님 37A · 이성미 37C · 김현수 37B (비상구 좌석) · FB5MNR / FAMB4F</span>
+        <span style="font-weight:600;color:var(--gold);">KE714 · 나리타 NRT 20:55 → 인천 ICN 23:25</span><br>
+        의장님 14E · 이성미 14F · 김현수 14H — 같은 열 나란히 배정 ✓<br>
+        <span style="color:var(--stone);font-size:11px;">의장님 FB5MNR · 이성미/김현수 FAMB4F (마일리지 발권)</span>
+      </div>
     </div>
   </div>
   </div>
+
+
 </div>
-
-
 </div>
 
 
@@ -877,42 +905,141 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
 </div>
 
 <!-- 🚐 이동 -->
+<!-- 🚐 이동 -->
 <div id="tab-transport" class="tab-panel">
   <div class="section-title">🚐 이동 수단</div>
 
+  <!-- 1. 간사이공항 → 아리마 온천 -->
   <div class="route-card">
-    <div class="route-title">🛬 간사이공항 → 아리마 온천 <span style="font-size:11px;color:var(--stone);font-weight:400;">(06.09 도착 당일)</span></div>
-    <div>
-      <div class="route-step" style="border-bottom:none;">
-        <div class="route-icon">🚐</div>
-        <div>
-          <div class="route-step-name" style="color:var(--green);">✅ 확정 예정 · 한인 픽업 차량</div>
-          <div class="route-step-desc">공항 도착 후 픽업 기사 미팅 → 나카노보 즈이엔 직행 · 3인 + 짐<br>
-          <a href="https://experiences.myrealtrip.com/products/3425939" target="_blank" style="color:var(--gold);font-weight:600;text-decoration:none;">마이리얼트립 예약 링크 ↗</a></div>
-          <div class="route-step-time">약 1시간 10분</div>
+    <div class="route-title">🛬 간사이공항 → 아리마 온천 <span style="font-size:11px;color:var(--stone);font-weight:400;">(06.09 화)</span></div>
+    <div class="route-step" style="border-bottom:none;">
+      <div class="route-icon">🚐</div>
+      <div>
+        <div class="route-step-name" style="color:var(--green);">✅ 한인 픽업 차량 (예약완료)</div>
+        <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0;">
+          <span style="background:var(--ink);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">간사이공항</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">픽업 차량 (약 70분)</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:var(--green,#2d7a3a);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">🏯 나카노보 즈이엔</span>
+        </div>
+        <div class="route-step-desc"><a href="https://experiences.myrealtrip.com/products/3425939" target="_blank" style="color:var(--gold);font-weight:600;text-decoration:none;">마이리얼트립 예약 링크 ↗</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. 나카노보 즈이엔 → 신오사카역 -->
+  <div class="route-card">
+    <div class="route-title">🚐 나카노보 즈이엔 → 신오사카역 <span style="font-size:11px;color:var(--stone);font-weight:400;">(06.11 목)</span></div>
+    <div class="route-step" style="border-bottom:none;">
+      <div class="route-icon">🚐</div>
+      <div>
+        <div class="route-step-name" style="color:var(--green);">✅ 한인 픽업 차량 (왕복 동일)</div>
+        <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0;">
+          <span style="background:var(--ink);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">나카노보 즈이엔</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">픽업 차량 (약 60분)</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:var(--green,#2d7a3a);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">🚉 신오사카역</span>
+        </div>
+        <div class="route-step-desc">10:30 출발 → 신오사카역 11:30 도착 예정</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. 신오사카역 → 도쿄역 -->
+  <div class="route-card">
+    <div class="route-title">🚄 신오사카역 → 도쿄역 <span style="font-size:11px;color:var(--stone);font-weight:400;">(06.11 목)</span></div>
+    <div class="route-step" style="border-bottom:none;">
+      <div class="route-icon">🚄</div>
+      <div>
+        <div class="route-step-name" style="color:var(--green);">신칸센(노조미)</div>
+        <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0;">
+          <span style="background:var(--ink);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">신오사카 12:15</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">신칸센(노조미) (약 2시간 30분)</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:var(--green,#2d7a3a);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">🚉 도쿄역 14:45</span>
+        </div>
+        <div class="route-step-desc">도쿄역 도착 후 신칸센 게이트 내 신칸센(아사마) 환승 — 출구 불필요</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. 도쿄역 → 카루이자와역 -->
+  <div class="route-card">
+    <div class="route-title">🚄 도쿄역 → 카루이자와역 <span style="font-size:11px;color:var(--stone);font-weight:400;">(06.11 목)</span></div>
+    <div class="route-step" style="border-bottom:none;">
+      <div class="route-icon">🚄</div>
+      <div>
+        <div class="route-step-name" style="color:var(--green);">신칸센(아사마) 환승 (게이트 내)</div>
+        <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0;">
+          <span style="background:var(--ink);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">도쿄역 15:00</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">신칸센(아사마) (약 1시간 10분)</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:var(--green,#2d7a3a);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">🚉 카루이자와역 16:10</span>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- 5. 카루이자와역 → 호시노야 -->
   <div class="route-card">
-    <div class="route-title">✈️ 아리마 온천 → 간사이공항 <span style="font-size:11px;color:var(--stone);font-weight:400;">(06.12 귀국 당일)</span></div>
-    <div>
-      <div class="route-step" style="border-bottom:none;">
-        <div class="route-icon">🚐</div>
-        <div>
-          <div class="route-step-name" style="color:var(--green);">✅ 확정 예정 · 한인 픽업 차량 (왕복 동일)</div>
-          <div class="route-step-desc">18:15 출발 기준 → 최소 15:30 료칸 출발 필요<br>체크아웃 후 픽업 차량 사전 시간 지정 필요</div>
-          <div class="route-step-time">약 1시간 10분</div>
+    <div class="route-title">🚕 카루이자와역 → 호시노야 가루이자와 <span style="font-size:11px;color:var(--stone);font-weight:400;">(06.11 목)</span></div>
+    <div class="route-step">
+      <div class="route-icon">🚕</div>
+      <div>
+        <div class="route-step-name" style="color:var(--green);">✅ 옵션 A — 택시 직행 (추천)</div>
+        <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0;">
+          <span style="background:var(--ink);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">카루이자와역</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">택시 (약 15분)</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:var(--green,#2d7a3a);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">🏯 호시노야 도착</span>
+        </div>
+      </div>
+    </div>
+    <div class="route-step" style="border-bottom:none;">
+      <div class="route-icon">🚃</div>
+      <div>
+        <div class="route-step-name">옵션 B — 시나노 철도 + 호시노야 무료 셔틀</div>
+        <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0;">
+          <span style="background:var(--ink);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">카루이자와역</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">시나노 철도 (약 3분)</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">나카가루이자와역</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:var(--green,#2d7a3a);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">무료 셔틀 → 🏯 호시노야</span>
+        </div>
+        <div class="route-step-desc"><span style="color:red;font-weight:700;">⚠️ 호시노야 셔틀은 나카가루이자와역(中軽井沢駅) 출발</span><br>셔틀 시간: 13:50 · 14:50 · 16:00</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. 호시노야 → 나리타공항 -->
+  <div class="route-card">
+    <div class="route-title">✈️ 호시노야 가루이자와 → 나리타공항 <span style="font-size:11px;color:var(--stone);font-weight:400;">(06.13 토)</span></div>
+    <div class="route-step" style="border-bottom:none;">
+      <div class="route-icon">🚄</div>
+      <div>
+        <div class="route-step-name">신칸센(아사마) + 신칸센(NEX)</div>
+        <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0;">
+          <span style="background:var(--ink);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">카루이자와 15:20</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">신칸센(아사마) (70분)</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">도쿄역 16:30</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:#e2e8f0;color:var(--ink);padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">신칸센(NEX) (17:00~)</span>
+          <span style="font-size:16px;color:var(--stone);font-weight:700;">→</span>
+          <span style="background:var(--green,#2d7a3a);color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:600;">✈️ 나리타 18:00~</span>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="notice notice-blue">
-    <span class="notice-icon">💡</span>
-    <span>왕복 모두 동일 픽업 차량 이용 · 일정 확정 후 픽업 시간 사전 지정 필요</span>
-  </div>
 </div>
 
 <!-- 🗺 지도 -->
