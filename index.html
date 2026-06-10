@@ -1245,13 +1245,14 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
         <div style="font-size:18px;font-weight:700;color:var(--ink);">가루이자와 → 도쿄</div>
         <div style="font-size:12px;color:var(--slate);margin-top:2px;">ASAMA 620 · 신칸센(아사마)</div>
       </div>
-      <span class="badge" style="background:#fff3e0;color:#b45309;border:1px solid #fcd34d;">예약 예정</span>
+      <span class="badge" style="background:#e8f5e9;color:#2d7a3a;border:1px solid #a5d6a7;">예약완료</span>
     </div>
 
     <div class="info-grid" style="margin-bottom:12px;">
       <div class="info-item"><div class="info-label">출발</div><div class="info-value">15:00</div><div class="info-sub">카루이자와역</div></div>
       <div class="info-item"><div class="info-label">도착</div><div class="info-value">16:12</div><div class="info-sub">도쿄역 · 1시간 12분</div></div>
       <div class="info-item"><div class="info-label">객차</div><div class="info-value">8호차</div><div class="info-sub">지정석</div></div>
+      <div class="info-item"><div class="info-label">예약번호</div><div class="info-value" style="font-size:13px;">E65866</div><div class="info-sub">JR East 공식 예약</div></div>
     </div>
 
     <div style="background:var(--canvas);border-radius:10px;padding:12px 14px;margin-bottom:14px;">
@@ -1275,12 +1276,129 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
       </div>
     </div>
 
-    <div class="notice" style="background:#fff8e1;border-color:#ffe082;margin-bottom:0;">
+    <div class="notice" style="background:#fff8e1;border-color:#ffe082;margin-bottom:14px;">
       <span class="notice-icon">🎟️</span>
-      <span style="font-size:12px;"><strong>탑승 전 역 매표기에서 발권 필수</strong> · Ekinet 예약 · 아사마 617과 동일 방식으로 수령</span>
+      <span style="font-size:12px;"><strong>탑승 전 역 매표기에서 발권 필수</strong> · QR 또는 발권코드로 각자 수령 · 승차일 당일까지</span>
+    </div>
+
+    <div style="font-size:12px;line-height:2;color:var(--slate);background:var(--canvas);border-radius:10px;padding:12px 14px;margin-bottom:14px;">
+      <div style="font-size:11px;font-weight:600;color:var(--stone);letter-spacing:0.8px;margin-bottom:6px;">예약 상세</div>
+      <div style="padding:4px 0;border-bottom:1px solid var(--hairline-soft);"><span style="color:var(--stone);">예약번호</span>&nbsp;&nbsp;<strong style="color:var(--ink);">E65866</strong></div>
+      <div style="padding:4px 0;border-bottom:1px solid var(--hairline-soft);"><span style="color:var(--stone);">열차</span>&nbsp;&nbsp;<strong style="color:var(--ink);">Asama 620</strong> · 지정석 · 8호차</div>
+      <div style="padding:4px 0;border-bottom:1px solid var(--hairline-soft);"><span style="color:var(--stone);">구간</span>&nbsp;&nbsp;KARUIZAWA(15:00) → TOKYO(16:12)</div>
+      <div style="padding:4px 0;"><span style="color:var(--stone);">승차권</span>&nbsp;&nbsp;KARUIZAWA → TOKYO YAMANOTE LINE</div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-asama620-a" onclick="toggleAcc('acc-asama620-a')">
+      <span class="acc-label">🎫 QR 코드 - 매표기 스캔용 A (의장님 · 2-A)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-asama620-a" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB6CAYAAAB0rJfZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVASURBVHhe7ZxbbuU4DETtWUCy/2VmBZ6PaQHsmqIp2ZSty9QB9EPxIaPsgtIJev/6+jo2UZZ/MCBqIYGLI4GLI4GLI4GLI4GLI4GLI4GLI4GLI4GLs4/+U+XPzw+GxIt8f39j6C/0BRdHAhdHAhdHAhcn5ZK17zuGbnEc/x3J9m0xS7S/OWezuWzfwnJ7ZrFnuAubq0vWL0cCFydd4OM4Li2Gt7/v+/+sr8UwjnOwlwXzjuOgfVkM6xnYu3fdIV1gsRYSuDhTBbZWxtZVIutiM3B2W5EVol1iHvbDuR6YjyuLqQKL95HAxVla4MiyPNu08VaPNov73izcw14WL/4mSwss7vMxAntfWMP7KiPYV3e1fqTuKT5GYHENCVycqQJb+2LrKndtcMRK8cxZVow9cWUxVWDxPhK4OOkCW/saWRGRfdleUW6ErR85YwQ+c++6Q7rAYi0kcHFS/iZrFnftaftjt1tnr8jSWw+bZ/tG9TPQ32T9clIEHrkQeLl4scB9hr0MRRcrzDnLxXOcncfrhbU9yyPaPyNFYLEuErg4KQJbm0LbweVZmhdnRLMsuIf7V+ZasHdbti+rs4w8zygpAot1kcDFSRHYs5Mee2qwHmhxaGVef8zHfbTA0bmsBusiolyc7eVFpAgs1iVFYHzT2vLe9Ibdx1qsZ71YDIn2LTgHV6Pnq8KaM1pu9OxXSBFYrIsELs5UgSMrG7EktG+v59Zh3dgH+7GYjXuwuSyG8ajvHaYKLN5HAhcn/ffBaEW9jFhUm2Fr7Nyol3fGVhf1ivY3Z4aXy+iZsen3wUICFydFYO+maLE3U3ZrZD1YzBLtbybHwzsPg/XyzoDPejg/KWBdg9VdIUVgsS6PC2zfXHzDz76knjpWfxbDOGPkS4vAc47WXeFxgcWzSODiTBWY2ZCN4WUDrRCtDOs8sN/oYue2sLPsJ5evaJ+BtV5exFSBxftI4OKkCIwWemZvnuVEdRaW19OXLYbtFeVavDMwRvreIUVgsS4SuDiPC4wW2RbeGNHmWNyz0qivVxcR5bFeLIbgcyFR/RmPCyyeJV1g9qXZuEf0ptt91subO4KdcXaWnll4VlwjXKlppAss1kICF2eqwNaSmOWhbY1akWelbK6Xyxg5i+07UvcUUwUW7yOBi7OMwMxC0brR/lgMYfts1ubkshkjthzN8uqyWEZgMYd0ge0by950L5e90dgDvwQW82D9EZyDfW2PtjAf67xcy1kM46OkCyzWQgIXZ6rAPbbYuGJJnv2x5dWxZfF6MLweEVdqepkqsHgfCVycxwVGO2SrWSLGcX8Ez2pZHOfhXLvsvuUshnGcv53kjvK4wOJZJHBxpgqMdta7GHafWaa1tMjeolkRtr/XC58JF8M791lNxFSBxfuk/BcO+Mbdpb2tXt/efYuXa2F1lp4eDXZG2z/qFZ2lof/C4ZcjgYuTLjBeJnoXw9uPLjiWK7neZaeBZz/rG+1vTr8s0gUWayGBizNVYLQ7XBE2Fy3sgJ99I3vzcq/U9YDPiovh7bNYL1MFFu8jgYuztMCeHTOi/Z5ezIK9OraY3bMYxlm9d8ZRlhZY3OdjBGZfAosh0T5+hT1fjDeXfc1eXxZn9d6sXj5GYHENCVycqQKjxeAaYcTSIvAcZ3XR3AivvxdvjMw4Y6rA4n0kcHHSBbbWMrIY0b4H9sblgZbt2SfmsFw2y8tlMQvr1Uu6wGItUv5kR7yH/mTnlyOBiyOBiyOBizN8yRKfhb7g4kjg4kjg4kjg4kjg4kjg4kjg4kjg4kjg4kjg4vwLuFCcs00GWEkAAAAASUVORK5CYII=" style="max-width:220px;width:100%;">
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-asama620-b" onclick="toggleAcc('acc-asama620-b')">
+      <span class="acc-label">🎫 QR 코드 - 매표기 스캔용 B (사모님 · 2-B)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-asama620-b" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB6CAYAAAB0rJfZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUeSURBVHhe7Z1ditwwEIQ9OcDu/Y+5J5i8RNAUVW7JkjLapj7ol/6TTI0rJgTy+vr6el+mLH8wYWphgYtjgYtjgYtjgYtjgYtjgYtjgYtjgYtjgYvz6v2ryp+fH0yZD/L9/Y0pit/g4ljg4ljg4ljg4kwJ/Hq9lgbby1B1lWfg2Tij8gzWi7tnYoYpgc35WODiLBP4/X4/iifMzl9ih7JFtEyMDHzm3ljBMoHNmVjg4mwRGC0MI0PZFJuPe9VcA++Bc5FsV1ZX4NkYq9kisDkHC1ycIwVG20L7ijlllTiDsLmYY+f+Ro4U2KzjSIHZ2xXzT5l9Q9W8uu8JHCmwWYcFLs4WgaNlsZhF7WK2qWA7lG1jX8xhPiPOsVjNFoHNOVjg4iwTONrbSDBiPdoXm3nay/KZVWbzmG/E+kisYJnA5kwscHGO/Ifv0Z6UXTYyK1Pz2Rmsrs5i87vxP3w31zUrsPogwI+FnnoM9rGEO56gduH56g4RVo89LIewOt4D66NMCWzOxwIX58iPrAxlW7s+dtp5cb+6A0PNsY+33mfwR5a5LgtcnymB1ZeeyjPwi/EuGvELVoEzCNsbifXsrHifrHeEu/v1MiWwOZ8pgeMvduSNYG+H+tVn9cjIHdjdR8jupeosz3KrmBLYnI8FLs52gZklxmC2yeajhbLc1fGxo/INdpd4R9Wr7sMY6b27ay/bBTafxQIXZ0pgZWnMCpU1MSvEHbgL8ziPZzSyOjsr5rP5iOpV92W9K5gS2JyPBS7OdoHRRtH+mD2hbWH0gDM4F/PsXhn4TGi7I8/L5lnfE7YLbD7LlMDqlxe5y+Evnf3iR8A9GAp8Y1So52U9I7D5nnv3MCWwOR8LXJxlAiv7Yjajelk9syo2j3lWx91qvyKbU+eOMDt/rRTYnIkFLs6UwE9tKM4xqxvZG+fZHNt/DZ7RiDPqGVhOweps7wxTApvzscDFWSYws5ZoL6qOdndXx513e3vritjLZrI7xtwnWSawOZMpgfEX/uTXy94Q9kaoekTN4fwlzo25uIvtzPI9sPnVTAlszscCF2dKYLSwO8thNobBwB61/xJn9ID7cS47S+XxLri3kdVnmBLYnI8FLs6UwGhFzLIY2I+hehs9ltZmenobeA/cEYl7szPYM0TwvLveUaYENuezRWD8VWNkvaqOv3AMtiOrxx4Fq+PZrKeRPcNOtghszsECF2e7wGhH75u/5stg9qpsd4S4424X9rBerN3VGTir+nrZLrD5LBa4OP9NYGU5MY9WrkLNqL3sXEa2K6v3nJGBz4pnjfLfBDafwQIXZ4vAzF7Qdlg00FoxesDdGHEfnn+JPzp67oDnYESyXSvYIrA5hymB8c2aDQb79cdcnGf5iOrtrUeyevZcV9gRe3vmRpgS2JyPBS7OMoGjZY3EE5SVZvb29Fy2c8VZbL5nboRlApszscDF2SJwtC8WGcqmYr5F3Is1rEdYXs3hzveNfeKzYjDUuXczvWwR2JyDBS7OkQKjRaFVxVxmm6o+YosstxJ1Lrv3KEcKbNZxvMDsTVNv5VPYLnaGcg4WCuy7ixUcL7CZwwIXZ4vAaDUYGVkvfhCxDxSsYbBeBd4f76X2NuIc3qMnZtgisDkHC1ycZQKjrfQGA3uwt8cqWT2jZy8LNsdySOxhvSw3yjKBzZn8yv8g2vg/iDb/sMDFscDFscDF6f7IMr8Tv8HFscDFscDFscDFscDFscDFscDFscDFscDFscDF+Qv9Xr/LIBa8RQAAAABJRU5ErkJggg==" style="max-width:220px;width:100%;">
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-asama620-c" onclick="toggleAcc('acc-asama620-c')">
+      <span class="acc-label">🎫 QR 코드 - 매표기 스캔용 C (현수 · 2-C)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-asama620-c" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAACOCAYAAAAfHcv/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVuSURBVHhe7d1bjuM6DEXR5A6gav7DrBGkvwQQh6QpO5Ji3ewF6EcP2gaOmVRXN/r58/PzegDGfzoBEAo4hAIOoYBDKOAQCjiEAg6hgEMo4BAKOIQCDqGAQyjgEAo4hAIOoYBDKOA8R/zNq7+/P53CB/3+/urUKXQKOIQCDqGAQyjgTAvF8/kcOiLRejR3NB/Ra+uZbD4S7dXa74wZpoUC+yIUcJaE4vV6XRoVuzdqp1mb1Ras65bWfz6f4T1mtaK9lj5z75hpSSiwF0IBZ3kotG3rqOj+NrS96rCiuUxUP1Kt99Bn0rHK8lDg/ggFnK1DYVu2tlod0d5oTuejjwStrSPbu4utQ4E5vjIUVXewordcu4iO3X1lKHCMUMBZHgpttTrepfV66575QqhfLHVcpfesY5XlocD9EQo4S0Kh7bV3vCur1eZGtOZ3z+sz946ZloQCeyEUcLb7x0BZ64xaeLXXrkfnH2ZPtW7ZvT3XGI1/DIThpnWK7A2J3qwe1VtWvdFWdA/ZPfbUOyu6fo/ee6FTYDhCAWdaKNrP79ry7Hzvuu6JtH3683wb0d6sfjYfierrtXVY2bWiuVWmhQL7IhRwloQia53RnKVtV/fqmq5nrbnJzlnVeiS7rp1vI7uHNpfVmmlJKLCXaaGwb0D1ZmTr+lb1rNuR0esfia4bPUM0p6p1q7rumVpnTQsF9kUo4EwLRU8bj1qkPRe1yWpd26uua43qHqvz0Vx13WhO5xu9Tx0zTAsF9kUo4Ez7LekZ2mabqD1me5vozKPjXCaqV9WKzmRsrSvnojP8lhTDEQo4S0KRfRuP5uw3a3uuDf32rUP3R+eia0Xrj+SnmWhvNKfnz9Brnj3/jiWhwF4+Ggp9Q18Hf2ZRvYXRmUy0fuaNrPZW61b27JXoGUb5aChwT4QCzrRQZC3dzletMtoTzVnZdUeydav61Z7sebR+dn6GaaHAvggFnGmhsG0va5FNth7VyGirPbqunW+jatM9dSNn9lb3sMq0UGBfhALOtFBkrTkaVtWm9azuzUT300Pr6/M01bruifba+aMzdn2GaaHAvqaFIntbrOhtsbL5Xvb81VrVPTbV+iO5n6tv/5UzvaaFAvsiFHCWhKJqkdm6ne9tzVdF18o+EuzeaJyh19GPFZ3XMcOSUGAvhALOklBU7S5qm9o6r7TmrKVHc9k99u6N7lXPRXNWdm61JaHAXj4ait4362m6RrY30vP2Nnb9zN4zqnuJOlC2N5ob5aOhwD0RCji3DkXUTitZu7W1opq6piPbWzmz17pyZpRbhwKfQSjg3DoU9qOgjavtWOvox0s1f4a9R72m1tI13ZM9bzQ3yq1Dgc8gFHBuEQrbIqsRtdiHacM9eyP23BU919Jn0RHJ6kZzo9wiFLiXaaGwCR8xmurNsvRN7D13xZn60XNlsrrR3CjTQoF9EQo4S0Kh7bt3RPRjpY12ZkRrtnrr6v0c7e25rtbJas2wJBTYC6GAszwU2hJ1XFWdt9eoWrelZ7Jzdj3bq8+qw6rOz7Q8FLg/QgFn61BEbdrOZe1W27YOS+s/ko8iraHr0b0+Dj52js5rjdG2DgXm+JpQ6Jt2NCLZ23/UXbJalq1r9Z6f4WtCgX6EAs7yUGir1lGJWre23itsraputJ49w7t7rWp9lOWhwP0RCjhLQqEtuXdE7Lp+9Gg7zuYjWufonO7Rfdk9VqK9V2u9Y0kosJdpodA36d0R1V3pzHVH7q3WZ5gWCuyLUMAhFHAIBZwh/601/l/oFHAIBRxCAYdQwCEUcAgFHEIBh1DAIRRwCAUcQgGHUMAhFHAIBRxCAYdQwCEUcAgFHEIBh1DAIRRwCAUcQgHnH+WO1qNEM3UxAAAAAElFTkSuQmCC" style="max-width:220px;width:100%;">
+      </div>
     </div>
   </div>
 </div>
+
+  <!-- N'EX 43 Day5 -->
+  <div class="card" style="margin-top:16px;">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px;letter-spacing:1.5px;color:var(--stone);font-weight:600;margin-bottom:2px;">DAY 5 · 06.13 (토)</div>
+        <div style="font-size:18px;font-weight:700;color:var(--ink);">도쿄 → 나리타공항</div>
+        <div style="font-size:12px;color:var(--slate);margin-top:2px;">Narita-Express 43 · 成田エクスプレス</div>
+      </div>
+      <span class="badge" style="background:#e8f5e9;color:#2d7a3a;border:1px solid #a5d6a7;">예약완료</span>
+    </div>
+
+    <div class="info-grid" style="margin-bottom:12px;">
+      <div class="info-item"><div class="info-label">출발</div><div class="info-value">17:03</div><div class="info-sub">도쿄역</div></div>
+      <div class="info-item"><div class="info-label">도착</div><div class="info-value">17:54</div><div class="info-sub">나리타 T2·T3 · 51분</div></div>
+      <div class="info-item"><div class="info-label">객차</div><div class="info-value">12호차</div><div class="info-sub">그린석 (지정석)</div></div>
+      <div class="info-item"><div class="info-label">예약번호</div><div class="info-value" style="font-size:13px;">E24039</div><div class="info-sub">JR East 공식 예약</div></div>
+    </div>
+
+    <div style="background:var(--canvas);border-radius:10px;padding:12px 14px;margin-bottom:14px;">
+      <div style="font-size:11px;font-weight:600;color:var(--stone);letter-spacing:0.8px;margin-bottom:8px;">좌석 배정</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">의장님</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">7-A</div>
+          <div style="font-size:10px;color:var(--slate);">성인 1 · 12호차</div>
+        </div>
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">사모님</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">7-B</div>
+          <div style="font-size:10px;color:var(--slate);">성인 2 · 12호차</div>
+        </div>
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">현수</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">7-C</div>
+          <div style="font-size:10px;color:var(--slate);">성인 3 · 12호차</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice" style="background:#fff8e1;border-color:#ffe082;margin-bottom:14px;">
+      <span class="notice-icon">🎟️</span>
+      <span style="font-size:12px;"><strong>탑승 전 역 매표기에서 발권 필수</strong> · QR 스캔 또는 예약번호로 수령 · 도쿄역 N'EX 전용 플랫폼 확인</span>
+    </div>
+
+    <div style="background:var(--canvas);border-radius:10px;padding:12px 14px;margin-bottom:14px;">
+      <div style="font-size:11px;font-weight:600;color:var(--stone);letter-spacing:0.8px;margin-bottom:6px;">예약 상세</div>
+      <div style="font-size:12px;line-height:2;color:var(--slate);">
+        <div style="padding:4px 0;border-bottom:1px solid var(--hairline-soft);"><span style="color:var(--stone);">예약번호</span>&nbsp;&nbsp;<strong style="color:var(--ink);">E24039</strong></div>
+        <div style="padding:4px 0;border-bottom:1px solid var(--hairline-soft);"><span style="color:var(--stone);">열차</span>&nbsp;&nbsp;<strong style="color:var(--ink);">Narita-Express (YOKOHAMA) 43</strong> · 그린석 · 12호차</div>
+        <div style="padding:4px 0;border-bottom:1px solid var(--hairline-soft);"><span style="color:var(--stone);">구간</span>&nbsp;&nbsp;TOKYO(17:03) → NARITA APT TERMINAL2·3(17:54)</div>
+        <div style="padding:4px 0;"><span style="color:var(--stone);">승차권</span>&nbsp;&nbsp;TOKYO → NARITA APT TERMINAL2·3 · 어른 3명</div>
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-nex-1" onclick="toggleAcc('acc-nex-1')">
+      <span class="acc-label">🎫 QR 코드 - 매표기 스캔용 A (의장님 · 7-A)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-nex-1" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACHCAYAAAAx+TpNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU0SURBVHhe7ZtRbiM5DETlPUBy/2PmBN4vAUSh2FS7pXYL8x7AH5KipKBUdmaQ18/Pz7vBP81/moB/D0QAiAAQASACaIgAGiKAhgigIQJoiAAaIoCGCKAhAmiIAFpr7XXlv5L//v40BV/k9/dXU0PgBIAIABEAIoC2QgSv12tqOFzd5Y7yDt1b12R5h+vV2VdiJtNFAPuBCGCtCN7v90dxBmePmW2qpWo90s8Se90Zs1muN6J3Ho0VLBUB7AEigPtEoDasUZH1ql1quN4Rjj4CIlV9BP1ZaKzmNhHAc0EEsL8I1DrVPqNdO4uP62LeWbzuo5H1Pp3tRQDX2VIE+lr1xWZUrz/iXrHuqbErW4oA5oII4D4RqHVqfIqz7TNfyj7tdfEp+rPQWM1tIoDngghgrQjULkfjE0bss88f6a24ul7vPBorWCoC2ANEAPv88Ulmhc6Sq95Yd+tb6Knqkdg7ssds+OMT+JjpTpC9APdyRqhekZubral6s7PPwu0/wuhZcAL4GEQA80XQf39WC4v5M1Hh+rLfq3W2rsvyDjc/7usiku3lcquZLgLYD0QA3xGBs8eI2uhRryOz2s7I3KruyPaN+R7ZGXoum7WCr4gAnsV0EegLdlH16qs5ejmdkZdztF5x+7ozuJxS1SPVvmdmjTJdBLAfiAC+KwK1fGeFrtfVXU7Rfd4nPzrcuupcscflNN/Rc2rM5KsigGeACGC+CEYsq9cr+zya0enr45o499NQ+9W5un+2JrtDtq5C95/BdBHAfiACuE8EzlYzolW6ULuNM3Wus1pdq/WWnMH1upyuP4PueXb9J9wmAnguXxGBvsD3wV8KV6/MvZZsnctlMxxVb1WPZGes+GRNxVdEAM8CEcB8EURLzCyvssw4o+q9k3gfd69I1aP3cz+zo/UzmS4C2A9EAGtFoFan1u5ybcBKI2qd74N/M9BzvA4+sjojcx1neqszrGapCGAPEAHMF0FmbWrZR3VnpbrWzZiJO4vbt6pHsl5335hz9ZlMFwHsx3QRjKjWvYZIlne4vapXNkJ1xk5Vb8msq+eayXQRwH4gAlgrgswqXS4SrfKqfWZn6Li9sjWx18UZqj30HBozWSoC2ANEAPNFMMOyrs7ILNrNzPY6Wh97Y67at6q7+XcwXQSwH7eJIL6CM9HJXonLRXRenJnVtadT1c9QzcrqLneV20QAzwURwH0iyOzccabXoV+yNGb0XmXmrKvcJgJ4LogA7hNB/LZb2WD2zfiIbE3MV3WXn4GbpWfSyD4uXO4qt4kAngsigPtE4Owt5rLoVLYd12S9DrfXGc5YeBauN7uDy13lNhHAc5kugqjgGdGpXo7LaX4FZ/Zy98rI5rrcVaaLAPYDEcBaEURLOxMO/Zg4iopqrzbwBa2jex/1juyrc7JZM1kqAtgDRAD3iUAtTuNTKnuNnOnt56osPNazXr2rRqRav4LbRADPBRHAniJwtutyGWrHzmrdrNjb6zpD69m5tOZ6OlX9KluKAOayvQjcK85eZEdfn9Yj2Sy3bzUrEue6/JlZV9leBHAdRAD3iUCtV6Mi9mZW+glxVjXX1c+cK7tvXFfVV3CbCOC5IAJYKwK12NFwxLp+lKh9ZnmHzjlapz1ZX0vunuHmZfddwVIRwB5MF4G+lKvh5t7JmX317BpZr6Oqz2S6CGA/EAEgAkAE0Fp7/fz8rP/mAY8GJwBEAIgAEAE0RAANEUBDBNAQATREAA0RQEME0BABNEQADRFAQwTQEAE0RAANEUBDBNBaa/8D3L69edrUZ9UAAAAASUVORK5CYII=" style="max-width:220px;width:100%;">
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-nex-2" onclick="toggleAcc('acc-nex-2')">
+      <span class="acc-label">🎫 QR 코드 - 매표기 스캔용 B (사모님 · 7-B)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-nex-2" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAACACAYAAADebJ0VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU1SURBVHhe7ZxdbtwwDISzPUBy/2PmBNsnA+xgRpQtyVa58wF84Z/ojs0qSNHX9/f3+8uU4w86TA0sbFEsbFEsbFEsbFEsbFEsbFEsbFEsbFEsbFEsbFEsbFEsbFEsbFFevb+2+/39RZd5kJ+fH3T9g7/YoljYoljYoljYogwJ+3q9phrry1Bx5Wfg2Vij/AyWi71H7ApDwpp9sbBFmSbs+/2+ZBlsJZ2pV7Ae7Cz0M8vAZ+61EaYJa/bCwhZlibC4qtAycCUdxupj32yN4RxYF8l6ZXEFno02iyXCmuexsEXZUthsNWXxr5CjYKs0+nrO2JkthTXjbCnsqi9ntK+qZ1//02wprBnHwhZlibBxNTG7SlbP1qOCzaPWM+ZFH/oz8M8CbRZLhDXPY2GLMk3YuMbOGCPG45pivgjLjahzs74HWT36D2L8jI0wTVizFxa2KFv+g/G4htRaPMhWlqrPzmBxdRarX43/wfiHMiSs+oseLwE98WjsEhR7MF8Pqg7PVzNEWPzsjCyOc2C8lyFhzb5Y2KLcdnmKK2X0sqHW02hfxXFe7K9mYKg6dinrfQZfnj4UC1uUIWHx9sYsA/PRWG68kSpYfUSdcRDj2Vlxniz3DK35MoaENfsyJCy+pa23NcbZ16DqIlnela8wznOGbG4VZ37mG2VIWLMvFrYoQ8Jmqy+SrcHoV3XMF3sxiyj/geqL52Mum1FxJrc1a8aQsGZfLGxRpgmrVkzL9+pYeWx9sho0RhZnZ0V/Vh9Rudnss5gmrNkLC1uUacLGFXPG2BpScczD3AjWYF30s/oMfA6ct2cu1gtnxrl7mSas2Ytpv4/FNxD9zId+xpk3dmYvhnqGSDZDhPXorffvYz8UC1uUacKqy0LL13NZYH2ZD8Gerb5ZL0ZWp85VfkZvHmOasGYvLGxRlgibrZsYx3X4Fj/bKrI6tTJZbkasUc/AfAoWZ32vsERY8zwWtihLhGVriK2YuLp64gwVZ/VsLkXMZTXZjMx3J0uENc8zJGx8K5VlsC8i1uNXo74Q7MXqVS7z4XNgL+XHni1Y/SyGhDX7YmGLMiQsrh9mbGXiisMcVq/iiiwewTlwXtZLzXDUq2dgdercEYaENftiYYtym7BsBbX8Byzes7pwtbZyD+JZ0Vg99sac6GPP8NU4j+We5TZhzb0sFxbfenyD2dseYXH1VqszsrNYrwiLY++WKdgss1gurHkGC1uUJcLGlcdWo/JnYM9Zawx7qr6YM2rsuTHnJWbJWCKseR4LW5QlwuKtENdvRPkPsA+uLuXHdab6R7JeOAfLPQObC3tf7b9EWPM8FrYotwmL66VluELResCeaLHf4YuwOM7B5sFz0O7iNmHNvQwJi2/uqDHwjUdT9S3fS/z8nMUjWVzNFWHP0FPXw5CwZl8sbFGmCYsrsteuoFZm1jeLK9hqzFZmz1msvqeuh2nCmr2wsEVZIize7tAy1Do66mNc9c3izK/6Rj+bKxLrmDHUua2ajCXCmuexsEXZUlhcRbiSmA854mp9nll/zDcDNlcki7fYUlgzzvbCsi8u+lg85vTAclnf+EXj2WiKmMM2QU+PHrYX1lzDwhZlibC4ltAysly86LCVhjE0lqvA+d+Nn48ZWR3OhnaFJcKa57GwRZkmLK6PXmNgDuaqVR1zWTyjpy/OouKqVyTmsFzm62WasGYvpv1H1OZe/B9RfygWtigWtigWtijdlyfzf+EvtigWtigWtigWtigWtigWtigWtigWtigWtigWtigWtigWtih/AWo6iwLs6TPZAAAAAElFTkSuQmCC" style="max-width:220px;width:100%;">
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-nex-3" onclick="toggleAcc('acc-nex-3')">
+      <span class="acc-label">🎫 QR 코드 - 매표기 스캔용 C (현수 · 7-C)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-nex-3" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAB2CAYAAAD7jqxVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUFSURBVHhe7Z1dbtwwDIS9PUBy/2PmBNsnFcR0aFK0/LPMfABfSIqSM/J006To6+vr672JFvzBhPhcJGYjJGYjJGYjJGYjJGYjJGYjJGYjXtFfGvz8/GBK3Mj39zem/qE3sxESsxESsxESsxElMV+v19JgsDrL7eUZuDeu8fIM1ouzj8QsJTHFM5GYjTgs5vv9LsUMzHY8O0KrwrplnMX2sjN6s1ivBZ85G1UOiymeg8RsxFIx0d4wIrxetCEM1pthz1otUT0Dfi0wVrBUTHEvErMRjxWTWZtnS7aXWaddZ/M4f5u0Qy9/F48VU8zzEWLO3P7obbSwufjWYjyZjxBT5JCYjVgqJloSxlGqs2Y+qNheFlXwa4GxgqViinuRmI04LCbaUDaO4s0auRUWdnQ9PnM2qhwWUzwHidmIR/0StGcxkdXZdaOX5ZDRE9Uttjezx2r0S9C/hNKb6d1IdpMzRLeazfXWRL3e2VfB9s+QPYvezF+CxGzEUjHH92WzwbDfd7E+W7fgbFzn5Rlsvt2XhcXbi+VWsFRMcS8SsxGniYn2kwmLtaiozvDmWqI6w9vX5vHcuMfIebOqnCamuJ6lYrKb6N0+vMV4k21gH86y4P57RPsOWA6J6pZo35lZlqViinuRmI0oielZI8Ors7xno2g/GBa0Y5xlidazXLQvy2F+gOfEmKUkpngmErMRpZ+aWNAmkahuQetCvPXROg82L5rF1njMPLtlrGNr9FOTX4LEbMRpYrJPfBb7qXAEfprDsL0W28NyrL4lzsBmeetnwD1n13ucJqa4ntPExDfinfiXWXhbMdgahNVn3oCoN6pbMudlVNZsZ4oprkdiNqIkZsb6IitiMyJmLK6KfZ7oXFGPPS973mj9LCUxxTORmI0oiWntAS0EbZDlvBkeaEm4rwXP8dr5o2CQmcuY6Y3OsIKSmOKZSMxGlMT0LGwmmEVhz4izYGdh+0Z122Oxvex5bY7VZymJKZ7JaWLibcPwbvgguqnRrc+QPUtU35y3/Oi5ZjlNTHE9ErMRJTEztsPwrJHlIth671zVXhYzRHvgOTBmKYkpnonEbMRSMZkdWdvw7I7hrcP5Gby92CzW653FEj2XzbP6CpaKKe7ldDGjm2zDu7V7OXxbsnthzyCqe+ydxZvl1Vkuw+liiuuQmI1YKqZnkwzW69kOw/baWThzcz58ZHojot6ovpqlYop7kZiNOE3MyF6YpUa2ZOs27CycuTl72XwV3BNnYQ3De16Wy3CamOJ6JGYjThcTLXEvIrtiuT27GkT1iMxe+CwYrHfmeTOcLqa4jpKY9katiEF0k1kObzjrPYp3LgZ7Lg9vLstlKIkpnonEbMRhMa1VzAQD7RftiuU2x65YDhl1b+4Az7PXm9kX53izZjkspngOErMRS8VE68CYIbIrnF3ZY6yJ9rJ1rxfPgWGJ1ldZKqa4F4nZiI8Qk9nPFXY36jgD695ZsMZ6BlE9w0eIKXJ8rJjRG+IFw5s1cpZolsXOZfmZWRk+VkzxPxKzEUvFREvDiLC9zKJwXnauncXmWlh9Zi+v186N6lWWiinuRWI24rCYaF3ZYNg6Wunbsd4MOIfZ3AB7vL7NsUaW2xz79Z63ymExxXMoiYk392iwuYyoXqU6l63DZ8O6JarPUhJTPBOJ2QiJ2QiJ2Yjwv48Sn4PezEZIzEZIzEZIzEZIzEZIzEZIzEZIzEb8BWuV3IgPymV0AAAAAElFTkSuQmCC" style="max-width:220px;width:100%;">
+      </div>
+    </div>
+  </div>
 
 <!-- 🗺 지도 -->
 <div id="tab-map" class="tab-panel">
