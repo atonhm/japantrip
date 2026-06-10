@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -287,6 +287,7 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
     <button class="tab-btn active" onclick="switchTab('flight',this)">✈️ 항공편</button>
     <button class="tab-btn" onclick="switchTab('timeline',this)">🗓 일정</button>
     <button class="tab-btn" onclick="switchTab('transport',this)">🚐 이동</button>
+    <button class="tab-btn" onclick="switchTab('shinkansen',this)">🚄 신칸센</button>
     <button class="tab-btn" onclick="switchTab('hotel',this)">🏯 숙소</button>
     <button class="tab-btn" onclick="switchTab('map',this)">🗺 지도</button>
     <button class="tab-btn" onclick="switchTab('vjw',this)">📱 입국QR</button>
@@ -1006,7 +1007,7 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
       </div>
       <div class="info-grid">
         <div class="info-item"><div class="info-label">출발</div><div class="info-value">15:04</div><div class="info-sub">도쿄역</div></div>
-        <div class="info-item"><div class="info-label">도착</div><div class="info-value">16:15</div><div class="info-sub">카루이자와역 · 약 1시간 11분</div></div>
+        <div class="info-item"><div class="info-label">도착</div><div class="info-value">16:12</div><div class="info-sub">도쿄역 · 1시간 12분</div></div>
       </div>
     </div>
 
@@ -1040,8 +1041,8 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
         <span style="font-size:13px;font-weight:600;color:var(--ink);">가루이자와 → 도쿄</span>
       </div>
       <div class="info-grid">
-        <div class="info-item"><div class="info-label">출발</div><div class="info-value">15:20</div><div class="info-sub">카루이자와역</div></div>
-        <div class="info-item"><div class="info-label">도착</div><div class="info-value">약 16:30</div><div class="info-sub">도쿄역 · 약 1시간 10분</div></div>
+        <div class="info-item"><div class="info-label">출발</div><div class="info-value">15:00</div><div class="info-sub">카루이자와역</div></div>
+        <div class="info-item"><div class="info-label">도착</div><div class="info-value">16:12</div><div class="info-sub">도쿄역 · 1시간 12분</div></div>
       </div>
     </div>
 
@@ -1059,6 +1060,224 @@ body { font-family:'Paperlogy',sans-serif; font-weight:400; background:var(--can
         <span class="notice-icon">✈️</span>
         <span>KE714 출발 20:55까지 약 2시간 30분 여유 · 탑승수속 여유있게 진행</span>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🚄 신칸센 -->
+<div id="tab-shinkansen" class="tab-panel">
+  <div class="section-title">🚄 신칸센 티켓</div>
+
+  <!-- 노조미 378 -->
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px;letter-spacing:1.5px;color:var(--stone);font-weight:600;margin-bottom:2px;">DAY 3 · 06.11 (목)</div>
+        <div style="font-size:18px;font-weight:700;color:var(--ink);">신오사카 → 도쿄</div>
+        <div style="font-size:12px;color:var(--slate);margin-top:2px;">NOZOMI 378 · 신칸센(노조미)</div>
+      </div>
+      <span class="badge" style="background:#dbeafe;color:#1d4ed8;border:1px solid #93c5fd;">예약완료</span>
+    </div>
+
+    <div class="info-grid" style="margin-bottom:12px;">
+      <div class="info-item"><div class="info-label">출발</div><div class="info-value">11:57</div><div class="info-sub">신오사카역 · 플랫폼 27</div></div>
+      <div class="info-item"><div class="info-label">도착</div><div class="info-value">14:24</div><div class="info-sub">도쿄역 · 약 2시간 27분</div></div>
+      <div class="info-item"><div class="info-label">객차</div><div class="info-value">10호차</div><div class="info-sub">그린 객차 (지정석)</div></div>
+      <div class="info-item"><div class="info-label">예약번호</div><div class="info-value" style="font-size:13px;">GZY852573</div><div class="info-sub">Reservation No. 2756</div></div>
+    </div>
+
+    <div style="background:var(--canvas);border-radius:10px;padding:12px 14px;margin-bottom:14px;">
+      <div style="font-size:11px;font-weight:600;color:var(--stone);letter-spacing:0.8px;margin-bottom:8px;">좌석 배정</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">의장님</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">2-A</div>
+          <div style="font-size:10px;color:var(--slate);">성인 1</div>
+        </div>
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">사모님</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">2-B</div>
+          <div style="font-size:10px;color:var(--slate);">성인 2</div>
+        </div>
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">현수</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">2-C</div>
+          <div style="font-size:10px;color:var(--slate);">성인 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice" style="margin-bottom:14px;">
+      <span class="notice-icon">⚠️</span>
+      <span style="font-size:12px;">플랫폼 27번 (변경 가능 · 역 전광판 확인) · 게이트 통과 전 <strong>스크린 밝기 최대</strong> 설정 후 QR 스캔</span>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-nozomi-1" onclick="toggleAcc('acc-nozomi-1')">
+      <span class="acc-label">🎫 QR 티켓 · 의장님 (Seat 2-A)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-nozomi-1" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="신오사카_도쿄(1).png" style="max-width:280px;width:100%;border-radius:8px;border:1px solid var(--hairline);">
+        <div style="font-size:11px;color:var(--stone);margin-top:8px;">Car.10 Seat. 2-A · 성인 1</div>
+        <div style="font-size:10px;color:var(--slate);margin-top:4px;letter-spacing:1px;">EEF8 CB81 4CE7 E3D7 2B01 62DF 6405 A69F</div>
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-nozomi-2" onclick="toggleAcc('acc-nozomi-2')">
+      <span class="acc-label">🎫 QR 티켓 · 사모님 (Seat 2-B)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-nozomi-2" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="신오사카_도쿄(2).png" style="max-width:280px;width:100%;border-radius:8px;border:1px solid var(--hairline);">
+        <div style="font-size:11px;color:var(--stone);margin-top:8px;">Car.10 Seat. 2-B · 성인 2</div>
+        <div style="font-size:10px;color:var(--slate);margin-top:4px;letter-spacing:1px;">E5C3 F0BA 6DDC 39ED 8E75 AF57 7498 CA56</div>
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-nozomi-3" onclick="toggleAcc('acc-nozomi-3')">
+      <span class="acc-label">🎫 QR 티켓 · 현수 (Seat 2-C)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-nozomi-3" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="신오사카_도쿄(3).png" style="max-width:280px;width:100%;border-radius:8px;border:1px solid var(--hairline);">
+        <div style="font-size:11px;color:var(--stone);margin-top:8px;">Car.10 Seat. 2-C · 성인 3</div>
+        <div style="font-size:10px;color:var(--slate);margin-top:4px;letter-spacing:1px;">EBCD FEB4 65D2 14E0 4AE2 3CC9 A574 DEE0</div>
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-nozomi-guide" onclick="toggleAcc('acc-nozomi-guide')">
+      <span class="acc-label">📋 QR 탑승 이용 방법</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-nozomi-guide" class="acc-body" style="display:none;">
+      <div style="font-size:12px;line-height:2;color:var(--slate);">
+        <div style="padding:6px 0;border-bottom:1px solid var(--hairline-soft);"><strong style="color:var(--ink);">① 도착 전</strong> — QR 미리 준비 · 스크린 밝기 최대로 설정</div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--hairline-soft);"><strong style="color:var(--ink);">② 게이트 입장</strong> — 게이트 통과 전 QR 스캔 · 작동 안 되면 뒤로 물러섰다 재시도</div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--hairline-soft);"><strong style="color:var(--ink);">③ 환승 시</strong> — 신칸센에서 다른 열차 환승: QR 먼저 스캔 후 IC카드 탭</div>
+        <div style="padding:6px 0;"><strong style="color:var(--ink);">④ 게이트 나가기</strong> — 출구 게이트 통과 전 QR 재스캔 · 좌석 정보 티켓은 게이트에 넣지 말 것</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 아사마 617 -->
+  <div class="card" style="margin-top:16px;">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px;letter-spacing:1.5px;color:var(--stone);font-weight:600;margin-bottom:2px;">DAY 3 · 06.11 (목) 환승</div>
+        <div style="font-size:18px;font-weight:700;color:var(--ink);">도쿄 → 가루이자와</div>
+        <div style="font-size:12px;color:var(--slate);margin-top:2px;">ASAMA 617 · 신칸센(아사마)</div>
+      </div>
+      <span class="badge" style="background:#ede9fe;color:#5b21b6;border:1px solid #c4b5fd;">예약완료</span>
+    </div>
+
+    <div class="info-grid" style="margin-bottom:12px;">
+      <div class="info-item"><div class="info-label">출발</div><div class="info-value">15:04</div><div class="info-sub">도쿄역 · 플랫폼 23</div></div>
+      <div class="info-item"><div class="info-label">도착</div><div class="info-value">16:15</div><div class="info-sub">가루이자와역 · 약 1시간 11분</div></div>
+      <div class="info-item"><div class="info-label">객차</div><div class="info-value">11호차</div><div class="info-sub">그린 객차 (지정석)</div></div>
+      <div class="info-item"><div class="info-label">예약번호</div><div class="info-value" style="font-size:13px;">ZRQ114576</div><div class="info-sub">10 Jun 2026 예약</div></div>
+    </div>
+
+    <div style="background:var(--canvas);border-radius:10px;padding:12px 14px;margin-bottom:14px;">
+      <div style="font-size:11px;font-weight:600;color:var(--stone);letter-spacing:0.8px;margin-bottom:8px;">좌석 배정</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">의장님</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">3-A</div>
+          <div style="font-size:10px;color:var(--slate);">성인 1 · 11호차</div>
+        </div>
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">사모님</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">3-B</div>
+          <div style="font-size:10px;color:var(--slate);">성인 2 · 11호차</div>
+        </div>
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">현수</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">3-C</div>
+          <div style="font-size:10px;color:var(--slate);">성인 3 · 11호차</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice" style="margin-bottom:14px;background:#fff8e1;border-color:#ffe082;">
+      <span class="notice-icon">🎟️</span>
+      <span style="font-size:12px;"><strong>현장 지류 티켓 수령 필수</strong> — 탑승 전 매표기에서 QR 스캔 → 인당 2장 티켓 출력 · 출력한 티켓을 소지하고 탑승</span>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-asama-qr" onclick="toggleAcc('acc-asama-qr')">
+      <span class="acc-label">🎫 QR 코드 · 매표기 스캔용 (3인 공통)</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-asama-qr" class="acc-body" style="display:none;">
+      <div style="text-align:center;padding:10px 0;">
+        <img src="도쿄_가루이자와.png" style="max-width:240px;width:100%;border-radius:8px;border:1px solid var(--hairline);">
+        <div style="font-size:12px;color:var(--stone);margin-top:10px;">QR 인식 안 될 경우 아래 번호를 매표기에 직접 입력</div>
+        <div style="font-size:14px;font-weight:700;color:var(--ink);margin-top:6px;letter-spacing:2px;">27382321854521268</div>
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-asama-link" onclick="toggleAcc('acc-asama-link')">
+      <span class="acc-label" style="color:#c0392b;font-size:18px;">※ 수령가이드 링크 필독 ※</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-asama-link" class="acc-body" style="display:none;">
+      <div style="padding:10px 0;text-align:center;">
+        <div style="font-size:12px;color:var(--slate);margin-bottom:10px;">아래 링크를 클릭해 수령 가이드를 반드시 확인해주세요.</div>
+        <a href="https://www.klook.com/ko/notice_content/20297/?from_source=email&from_medium=system_email&from_campaign=mob_ptp_voucher" target="_blank" style="display:inline-block;background:var(--ink);color:var(--white);padding:10px 20px;border-radius:10px;font-size:13px;font-weight:600;text-decoration:none;">📎 티켓 수령 가이드 보기 ↗</a>
+      </div>
+    </div>
+
+    <button class="acc-btn" data-acc="acc-asama-guide" onclick="toggleAcc('acc-asama-guide')">
+      <span class="acc-label">📋 티켓 수령 및 탑승 방법</span><span class="acc-arrow">▼</span>
+    </button>
+    <div id="acc-asama-guide" class="acc-body" style="display:none;">
+      <div style="font-size:12px;line-height:2;color:var(--slate);">
+        <div style="padding:6px 0;border-bottom:1px solid var(--hairline-soft);"><strong style="color:var(--ink);">① 매표기로 이동</strong> — 도쿄역 내 신칸센 매표기(みどりの窓口 또는 자동발매기)</div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--hairline-soft);"><strong style="color:var(--ink);">② QR 스캔</strong> — 매표기에 QR 코드 스캔 → 인당 2장씩, 총 6장 출력</div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--hairline-soft);"><strong style="color:var(--ink);">③ QR 안 될 경우</strong> — 예약번호 <strong style="color:var(--ink);">27382321854521268</strong> 직접 입력</div>
+        <div style="padding:6px 0;border-bottom:1px solid var(--hairline-soft);"><strong style="color:var(--ink);">④ 탑승</strong> — 출력된 지류 티켓을 소지하고 플랫폼 23번으로 이동 · 게이트에 티켓 삽입</div>
+        <div style="padding:6px 0;"><strong style="color:#c0392b;">⚠️ 플랫폼 23번</strong> (변경 가능 · 역 전광판 반드시 확인)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 아사마 620 Day5 -->
+  <div class="card" style="margin-top:16px;">
+    <div class="card-header">
+      <div>
+        <div style="font-size:11px;letter-spacing:1.5px;color:var(--stone);font-weight:600;margin-bottom:2px;">DAY 5 · 06.13 (토)</div>
+        <div style="font-size:18px;font-weight:700;color:var(--ink);">가루이자와 → 도쿄</div>
+        <div style="font-size:12px;color:var(--slate);margin-top:2px;">ASAMA 620 · 신칸센(아사마)</div>
+      </div>
+      <span class="badge" style="background:#ede9fe;color:#5b21b6;border:1px solid #c4b5fd;">예약완료</span>
+    </div>
+
+    <div class="info-grid" style="margin-bottom:12px;">
+      <div class="info-item"><div class="info-label">출발</div><div class="info-value">15:00</div><div class="info-sub">카루이자와역</div></div>
+      <div class="info-item"><div class="info-label">도착</div><div class="info-value">16:12</div><div class="info-sub">도쿄역 · 1시간 12분</div></div>
+      <div class="info-item"><div class="info-label">객차</div><div class="info-value">8호차</div><div class="info-sub">지정석</div></div>
+    </div>
+
+    <div style="background:var(--canvas);border-radius:10px;padding:12px 14px;margin-bottom:14px;">
+      <div style="font-size:11px;font-weight:600;color:var(--stone);letter-spacing:0.8px;margin-bottom:8px;">좌석 배정</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">의장님</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">2-A</div>
+          <div style="font-size:10px;color:var(--slate);">성인 1 · 8호차</div>
+        </div>
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">사모님</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">2-B</div>
+          <div style="font-size:10px;color:var(--slate);">성인 2 · 8호차</div>
+        </div>
+        <div style="flex:1;min-width:80px;background:var(--white);border:1px solid var(--hairline);border-radius:8px;padding:8px 10px;text-align:center;">
+          <div style="font-size:10px;color:var(--stone);margin-bottom:3px;">현수</div>
+          <div style="font-size:15px;font-weight:700;color:var(--ink);">2-C</div>
+          <div style="font-size:10px;color:var(--slate);">성인 3 · 8호차</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice" style="background:#fff8e1;border-color:#ffe082;margin-bottom:0;">
+      <span class="notice-icon">🎟️</span>
+      <span style="font-size:12px;"><strong>탑승 전 역 매표기에서 발권 필수</strong> · Ekinet 예약 · 아사마 617과 동일 방식으로 수령</span>
     </div>
   </div>
 </div>
@@ -1235,11 +1454,9 @@ function toggleAcc(id) {
   if (el.style.display === 'none') {
     el.style.display = 'block';
     btn.querySelector('.acc-arrow').textContent = '▲';
-    btn.querySelector('.acc-label').textContent = '예약확인서 닫기';
   } else {
     el.style.display = 'none';
     btn.querySelector('.acc-arrow').textContent = '▼';
-    btn.querySelector('.acc-label').textContent = '예약확인서 보기';
   }
 }
 function switchDay(name, btn) {
